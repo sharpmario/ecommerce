@@ -1,0 +1,19 @@
+<div class="container">
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <td>sku</td>
+            <td>name</td>
+            <td>value</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.sku}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.unitPrice | currency:USD}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+</div>
